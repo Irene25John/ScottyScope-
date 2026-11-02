@@ -43,6 +43,33 @@ Once the math is verified, the system utilizes **Data-Driven Prompting**:
 
 ---
 
+## 👩‍💻 My Contributions (Irene John)
+
+I led a team of 4 through the 48-hour build and owned [the backend / the AI layer / the overall architecture].
+
+- **Architecture:** Designed the decoupled approach: a deterministic Python engine for risk scoring, with the LLM only generating remediation after a verified compliance gap
+- **Risk Engine:** Built the Pandas scoring logic that weights risk by industry and region (ESRS, SEC) and computes gaps between current values and targets
+- **AI Layer:** Integrated the Gemini API with data-driven prompts and built the fallback path for rate limits and network failures
+- **API:** Built the Flask endpoints connecting the scoring engine to the React dashboard
+- **Team Lead:** Split the work across 4 people, set up the repo structure, and coordinated integration before the deadline
+
+## ⚙️ How to Run
+
+**Backend**
+```bash
+cd backend
+pip install -r requirements.txt
+export GEMINI_API_KEY=your_key_here
+python app.py
+```
+
+**Frontend**
+```bash
+cd frontend
+npm install
+npm start
+```
+
 ## 🚀 Tech Stack
 
 * **Frontend:** React.js, Tailwind CSS, Lucide Icons
